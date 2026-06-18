@@ -1,75 +1,180 @@
-# React + TypeScript + Vite
+# 🍽️ UniChef
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">
 
-Currently, two official plugins are available:
+### Sistema completo para gestão e automação de restaurantes
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Desenvolvido pela **UNiTech**, o UniChef reúne ferramentas modernas para otimizar atendimento, vendas, produção e gestão operacional em estabelecimentos gastronômicos.
 
-## React Compiler
+</div>
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## 🚀 Sobre o Projeto
 
-## Expanding the ESLint configuration
+O **UniChef** é uma plataforma desenvolvida para digitalizar e automatizar processos dentro de restaurantes, lanchonetes, pizzarias, hamburguerias, bares e estabelecimentos do setor alimentício.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+A solução integra diversos módulos em um único ecossistema, permitindo maior controle operacional, aumento da produtividade e melhor experiência para clientes e colaboradores.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## ✨ Principais Funcionalidades
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 🖥️ Frente de Caixa (PDV)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Sistema completo para vendas presenciais com:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Abertura e fechamento de caixa
+- Controle de pedidos
+- Gestão de mesas
+- Controle financeiro
+- Emissão de comprovantes
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+### 📱 Cardápio Digital
+
+Permite que clientes realizem pedidos diretamente pelo celular.
+
+**Benefícios:**
+
+- QR Code nas mesas
+- Atualização em tempo real
+- Redução de filas
+- Maior agilidade no atendimento
+
+---
+
+### 🛒 Delivery Integrado
+
+Centralização de pedidos em uma única plataforma.
+
+- Controle de entregas
+- Gestão de motoboys
+- Acompanhamento de pedidos
+- Integração com canais de venda
+
+---
+
+### 📊 Gestão Empresarial
+
+Painéis completos para acompanhamento do negócio.
+
+- Relatórios financeiros
+- Indicadores de desempenho
+- Controle de vendas
+- Histórico de movimentações
+
+---
+
+### ⚖️ Integração com Balança Digital
+
+Automatização da pesagem de produtos.
+
+- Maior precisão
+- Redução de erros operacionais
+- Agilidade no atendimento
+
+---
+
+### 🔔 Chama Garçom
+
+Sistema inteligente de chamada.
+
+- Solicitação rápida pelo cliente
+- Notificação instantânea para equipe
+- Melhor experiência de atendimento
+
+---
+
+### 🤖 Robô de Atendimento
+
+Automação de processos e suporte ao cliente.
+
+- Atendimento automatizado
+- Respostas rápidas
+- Maior eficiência operacional
+
+---
+
+### 📋 Ordem de Serviço
+
+Controle completo de atividades internas.
+
+- Acompanhamento de demandas
+- Organização de processos
+- Histórico de execução
+
+---
+
+### 🍳 KDS para Cozinha
+
+Kitchen Display System para gerenciamento de produção.
+
+- Pedidos em tempo real
+- Organização da fila de preparo
+- Redução de erros
+- Comunicação eficiente entre setores
+
+---
+
+## 🎯 Objetivos
+
+O UniChef foi desenvolvido para:
+
+- Aumentar a produtividade operacional
+- Melhorar a experiência do cliente
+- Reduzir erros de atendimento
+- Automatizar processos internos
+- Centralizar informações do negócio
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+### Front-end
+
+- React
+- TypeScript
+- HTML5
+- CSS3
+
+### Ferramentas
+
+- Git
+- GitHub
+- VS Code
+
+---
+
+## 📈 Benefícios para o Negócio
+
+✅ Maior controle operacional
+
+✅ Atendimento mais rápido
+
+✅ Redução de custos
+
+✅ Melhor experiência do cliente
+
+✅ Gestão centralizada
+
+✅ Tomada de decisão baseada em dados
+
+---
+
+## 🏢 Sobre a UNiTech
+
+A **UNiTech** desenvolve soluções tecnológicas para empresas que buscam inovação, automação e crescimento sustentável.
+
+Nosso objetivo é transformar processos complexos em experiências simples, modernas e eficientes.
+
+---
+
+<div align="center">
+
+### 🚀 Transformando tecnologia em resultados
+
+**UNiTech © 2026**
+
+</div>
