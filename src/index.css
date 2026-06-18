@@ -1,0 +1,155 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'leaflet/dist/leaflet.css';
+
+* {
+  padding: 10;
+  box-sizing: border-box;
+}
+
+.Clients {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: visible !important;
+}
+
+.liquid-cursor {
+  position: fixed;
+  top: -12px;
+  left: -12px;
+
+  width: 24px;
+  height: 24px;
+
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.85);
+
+  box-shadow:
+    0 0 20px rgba(37, 99, 235, 0.6),
+    0 0 50px rgba(37, 99, 235, 0.4);
+
+  pointer-events: none;
+  z-index: 99999;
+
+  transform-origin: center;
+  will-change: transform;
+
+  backdrop-filter: blur(10px);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+
+  background: #ffffff;
+  color: #111827;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.section {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 120px 40px;
+}
+
+.gradient-text {
+  background: linear-gradient(
+    90deg,
+    #2563eb,
+    #7c3aed
+  );
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.marquee {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.marquee-track {
+  display: flex;
+  width: fit-content;
+  animation: scroll 30s linear infinite;
+}
+
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 100s linear infinite;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
